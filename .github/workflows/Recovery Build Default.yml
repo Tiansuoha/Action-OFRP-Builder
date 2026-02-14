@@ -1,28 +1,28 @@
 name: Recovery Build
 
-于:
+on:
   workflow_dispatch:
     inputs:
       SYNC_URL:
         description: 'SYNC_URL'
         required: true
-        默认: 'https://gitlab.com/OrangeFox/sync.git'
+        default: 'https://gitlab.com/OrangeFox/sync.git'
       MANIFEST_BRANCH:
         description: 'MANIFEST_BRANCH'
         required: true
-        默认: '14.0'
+        default: '14.0'
       DEVICE_TREE_URL:
         description: '设备树链接'
         required: true
-        默认: 'https://github.com/kexi1412/twrp_device_oneplus_aston'
+        default: 'https://github.com/kexi1412/twrp_device_oneplus_aston'
       DEVICE_TREE_BRANCH:
         description: '设备树分支'
         required: true
-        默认: 'main'
+        default: 'main'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        默认: 'device/oneplus/aston'
+        default: 'device/oneplus/aston'
       COMMON_TREE_URL:
         description: 'COMMON_TREE_URL (if no common tree, leave blank)'
         required: false
@@ -32,7 +32,7 @@ name: Recovery Build
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        默认: 'aston'
+        default: 'aston'
       MAKEFILE_NAME:
         description: 'MAKEFILE_NAME'
         required: true
