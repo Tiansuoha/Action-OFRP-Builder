@@ -10,7 +10,7 @@ on:
       MANIFEST_BRANCH:
         description: 'MANIFEST_BRANCH'
         required: true
-        default: '14.0'
+        default: '12.1'
       DEVICE_TREE_URL:
         description: '设备树链接'
         required: true
